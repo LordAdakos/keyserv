@@ -1,0 +1,7 @@
+[Unit]
+Description=Check DNS queries
+After=multi-user.target
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/keyserv.py bin
+[Install]
+WantedBy=multi-user.target
